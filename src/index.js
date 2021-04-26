@@ -23,7 +23,7 @@ const domRenderer = (stateArr) => {
   stateArr.forEach((user) => {
     const userEl = document.createElement("div");
     userEl.innerHTML = `
-    <div>
+    <div class="parentCard">
       <div class="card">
         <div>Name : ${user.name.title} ${user.name.first} ${user.name.last}</div>
         <div>Gender : ${user.gender}</div>

@@ -8,7 +8,12 @@
   text-align: center;
   flex-direction: column;
 }
-
+.search {
+  padding-left: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 5%;
+}
 .addUserBtn {
   background-color: #4caf50; /* Green */
   border: none;

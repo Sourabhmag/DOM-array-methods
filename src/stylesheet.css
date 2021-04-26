@@ -4,9 +4,12 @@
 }
 .user-list {
   display: flex;
-  justify-content: center;
   text-align: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+.user-list > div {
+  margin: 0.5%;
 }
 .search {
   padding-left: 10px;

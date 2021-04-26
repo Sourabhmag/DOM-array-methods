@@ -22,12 +22,10 @@ const domRenderer = (stateArr) => {
   userList.innerHTML = null;
   stateArr.forEach((user) => {
     const userEl = document.createElement("div");
-    userEl.innerHTML = `<div>
-    Name : ${user.name.title} ${user.name.first} ${user.name.last}
-    <ol>
-      <li>${user.gender}</li>
-      <li>${user.email}</li>
-    </ol
+    userEl.innerHTML = `<div class="card">
+    <div>Name : ${user.name.title} ${user.name.first} ${user.name.last}</div>
+    <div>Gender : ${user.gender}</div>
+    <div>Email : ${user.email}</div>
     </div>`;
     userList.appendChild(userEl);
   });
@@ -47,16 +45,16 @@ searchInput.addEventListener("keyup", (e) => {
 
 dscSortBtn.addEventListener("click", () => {
   const appStateCopy = [...appState];
-  appStateCopy.sort((a, b) => a.name.first < b.name.first ? 1:-1);
+  appStateCopy.sort((a, b) => (a.name.first < b.name.first ? 1 : -1));
   console.log(appStateCopy);
-  
+
   domRenderer(appStateCopy);
 });
 
 ascSortBtn.addEventListener("click", () => {
   const appStateCopy = [...appState];
-  appStateCopy.sort((a, b) => a.name.first < b.name.first ? -1:1);
+  appStateCopy.sort((a, b) => (a.name.first < b.name.first ? -1 : 1));
   console.log(appStateCopy);
-  
+
   domRenderer(appStateCopy);
 });

@@ -1,0 +1,46 @@
+.inputData {
+  display: flex;
+  justify-content: center;
+}
+.user-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.addUserBtn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 100px;
+  color: white;
+  padding: 15px 32px;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.sortASCBtn {
+  background-color: #ff1493; /* Green */
+  border: none;
+  border-radius: 100px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.sortDSCBtn {
+  background-color: #2e2eff; /* Green */
+  border: none;
+  border-radius: 100px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

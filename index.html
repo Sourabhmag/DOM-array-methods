@@ -4,16 +4,19 @@
 <head>
 	<title>Parcel Sandbox</title>
 	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./src/stylesheet.css">
 </head>
 
 <body>
 	<div id="app">
-		<button id="addUserBtn">Add user</button>
-		<button id="sort-asc">sort-Asc</button>
-		<button id="sort-dsc">sort-Dsc</button>
-		<input id="searchInput" name="search" type="text" placeholder="search"></input>
+		<div id="inputData" class="inputData">
+				<button id="addUserBtn" class="addUserBtn">Add user</button>
+				<button id="sort-asc" class="sortASCBtn">sort-Asc</button>
+				<button id="sort-dsc" class="sortDSCBtn">sort-Dsc</button>
+				<input id="searchInput" name="search" type="text" placeholder="search"></input>		
+		</div>
 		<br><br>
-		<div id="user-list"></div>
+		<div id="user-list" class="user-list"></div>
 	</div>
 
 	<script src="src/index.js">

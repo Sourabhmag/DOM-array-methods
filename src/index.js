@@ -22,10 +22,13 @@ const domRenderer = (stateArr) => {
   userList.innerHTML = null;
   stateArr.forEach((user) => {
     const userEl = document.createElement("div");
-    userEl.innerHTML = `<div class="card">
-    <div>Name : ${user.name.title} ${user.name.first} ${user.name.last}</div>
-    <div>Gender : ${user.gender}</div>
-    <div>Email : ${user.email}</div>
+    userEl.innerHTML = `
+    <div>
+      <div class="card">
+        <div>Name : ${user.name.title} ${user.name.first} ${user.name.last}</div>
+        <div>Gender : ${user.gender}</div>
+        <div>Email : ${user.email}</div>
+      </div>
     </div>`;
     userList.appendChild(userEl);
   });
